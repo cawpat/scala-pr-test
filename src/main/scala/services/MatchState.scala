@@ -1,12 +1,12 @@
 package services
 
-import models.{FutsalEvent, Undo}
+import models.{FutsalEvent, FutsalMatchEvent, Undo}
 
-class MatchState(val matchEvents: List[FutsalEvent]) {
+class MatchState(val matchEvents: List[FutsalMatchEvent]) {
   def addEvent(futsalEvent: FutsalEvent): MatchState = {
     futsalEvent match {
       case Undo => removeLastEvent
-      case event => new MatchState(matchEvents :+ event)
+      case event: FutsalMatchEvent => new MatchState(matchEvents :+ event)
     }
   }
   private def removeLastEvent: MatchState = matchEvents match {
