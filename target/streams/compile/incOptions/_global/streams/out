@@ -1,0 +1,30 @@
+[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = /Users/callumgibbons/Documents/dev/scala-pr-test/target/scala-2.13/classes.bak[0m
+[0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = /Users/callumgibbons/Documents/dev/scala-pr-test/target/scala-2.13/classes.bak[0m
+[0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0mRegistering generated classes:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Undo$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Undo.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KickOff$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FutsalPlayer.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Pass$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FutsalMatch$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FutsalMatch.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FutsalApp$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Tackle$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MatchState.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Goal.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FutsalApp$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FutsalEvent.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MatchState$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Pass.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FutsalApp.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Goal$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FutsalPlayer$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Tackle.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FutsalTeam$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KickOff.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FutsalTeam.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: /Users/callumgibbons/Documents/dev/scala-pr-test/target/scala-2.13/classes.bak[0m
