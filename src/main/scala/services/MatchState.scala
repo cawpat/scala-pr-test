@@ -6,12 +6,12 @@ class MatchState(val matchEvents: List[FutsalMatchEvent]) {
   def addEvent(futsalEvent: FutsalEvent): MatchState = {
     futsalEvent match {
       case Undo => removeLastEvent
-      case event: FutsalMatchEvent => new MatchState(matchEvents :+ event)
+      case event: FutsalMatchEvent => new MatchState(event :: matchEvents)
     }
   }
   private def removeLastEvent: MatchState = matchEvents match {
+    case ::(_, tail) => new MatchState(tail)
     case Nil => this
-    case events: List[FutsalEvent] => new MatchState(events.reverse.tail.reverse)
   }
 }
 

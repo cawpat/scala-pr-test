@@ -1,5 +1,5 @@
 import models._
-import services.MatchState
+import services.{MatchState, MatchStatsService}
 
 object FutsalApp extends App {
   def createFakeMatch() = {
@@ -55,8 +55,15 @@ object FutsalApp extends App {
       Goal(team1Player3),
     )
 
-    events.foldLeft(MatchState.empty)((matchState, event) => matchState.addEvent(event))
+    val matchState = events.foldLeft(MatchState.empty)((matchState, event) => matchState.addEvent(event))
+
+    (futsalMatch, matchState)
   }
 
-  createFakeMatch()
+  lazy val (futsalMatch, matchState) = createFakeMatch()
+  lazy val matchStatsService = new MatchStatsService(futsalMatch, matchState)
+
+  lazy val topScorer = matchStatsService.topGoalScorer.get
+  lazy val topTackler = matchStatsService.topTackler
+
 }

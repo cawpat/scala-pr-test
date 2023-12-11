@@ -14,7 +14,7 @@ class MatchStateSpec extends AnyFlatSpec with Matchers {
   }
 
   "addEvent with Undo" should "remove last event" in {
-    val events = List(KickOff(FutsalPlayer(1, "Bob")), Pass(FutsalPlayer(2, "Sarah")))
+    val events = List(Pass(FutsalPlayer(2, "Sarah")), KickOff(FutsalPlayer(1, "Bob")))
     val matchState = new MatchState(events)
     val expectedEvents = List(KickOff(FutsalPlayer(1, "Bob")))
     val newMatchState = matchState.addEvent(Undo)
