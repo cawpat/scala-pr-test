@@ -11,7 +11,7 @@ class MatchState(val matchEvents: List[FutsalMatchEvent]) {
   }
   private def removeLastEvent: MatchState = matchEvents match {
     case ::(_, tail) => new MatchState(tail)
-    case Nil => new MatchState(Nil)
+    case Nil => this
   }
 }
 
